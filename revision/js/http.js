@@ -6,7 +6,7 @@ let data = [];
 http_request.addEventListener('readystatechange', ()=>{
     if (http_request.readyState == 4 && http_request.status == 200) {
         console.log(http_request);
-        data = http_request.responseText
+        data = http_request.responseText // new XMLHttpRequest Object
         console.log(data)
     }
 })
